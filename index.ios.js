@@ -51,3 +51,45 @@ const styles = StyleSheet.create({
 });
 
 AppRegistry.registerComponent('PushwooshSample', () => PushwooshSample);
+
+var Pushwoosh = require('pushwoosh-react-native-plugin');
+
+Pushwoosh.init({ "pw_appid" : "4FC89B6D14A655.46488481" });
+
+var pushHandler = (pushData) => {
+  console.warn("Push data: " + JSON.stringify(pushData));
+  alert(JSON.stringify(pushData));
+
+  // A native module is supposed to invoke its callback only once so we have to register callback again after it is called
+  Pushwoosh.onPushOpen(pushHandler);
+}
+
+Pushwoosh.onPushOpen(pushHandler);
+
+Pushwoosh.register(
+  (token) => {
+    console.warn("Registered for pushes: " + token);
+    Pushwoosh.getPushToken(function(token) {
+        console.warn("Push token: " + token);
+    });
+  },
+  (error) => {
+    console.warn("Failed to register: " + error);
+  }
+);
+
+Pushwoosh.getHwid((hwid) => {
+  console.warn("Pushwoosh hwid: " + hwid);
+});
+
+Pushwoosh.setTags({ "testTag" : "testValue" });
+
+Pushwoosh.getTags(
+  (tags) => {
+    console.warn("Application tags: " + JSON.stringify(tags));
+  },
+  (error) => {
+    console.error(error);
+  }
+);
+
