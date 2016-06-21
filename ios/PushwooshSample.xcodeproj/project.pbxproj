@@ -91,6 +91,76 @@
 			remoteGlobalIDString = 83CBBA2E1A601D0E00E9B192;
 			remoteInfo = React;
 		};
+		46ACA2BE1D19274400717D7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 58B511DA1A9E6C8500147676;
+			remoteInfo = RCTActionSheet;
+		};
+		46ACA2CA1D19274900717D7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C302B51ABCB90400DB3ED1 /* RCTGeolocation.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 58B511DA1A9E6C8500147676;
+			remoteInfo = RCTGeolocation;
+		};
+		46ACA2CC1D19274D00717D7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 58B5115C1A9E6B3D00147676;
+			remoteInfo = RCTImage;
+		};
+		46ACA2CE1D19275000717D7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 83CBBA2D1A601D0E00E9B192;
+			remoteInfo = React;
+		};
+		46ACA2D01D19275300717D7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 58B511DA1A9E6C8500147676;
+			remoteInfo = RCTLinking;
+		};
+		46ACA2D21D19275600717D7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 58B511DA1A9E6C8500147676;
+			remoteInfo = RCTNetwork;
+		};
+		46ACA2D41D19275900717D7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 58B511DA1A9E6C8500147676;
+			remoteInfo = RCTSettings;
+		};
+		46ACA2D61D19275C00717D7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 58B5119A1A9E6C1200147676;
+			remoteInfo = RCTText;
+		};
+		46ACA2D81D19275F00717D7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 832C817F1AAF6DEF007FA2F7;
+			remoteInfo = RCTVibration;
+		};
+		46ACA2DA1D19276200717D7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C86DF451ADF2C930047B81A;
+			remoteInfo = RCTWebSocket;
+		};
 		46D37B4C1D12BBF000D5EC47 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46D37B481D12BBF000D5EC47 /* PushwooshPlugin.xcodeproj */;
@@ -372,6 +442,16 @@
 			buildRules = (
 			);
 			dependencies = (
+				46ACA2DB1D19276200717D7F /* PBXTargetDependency */,
+				46ACA2D91D19275F00717D7F /* PBXTargetDependency */,
+				46ACA2D71D19275C00717D7F /* PBXTargetDependency */,
+				46ACA2D51D19275900717D7F /* PBXTargetDependency */,
+				46ACA2D31D19275600717D7F /* PBXTargetDependency */,
+				46ACA2D11D19275300717D7F /* PBXTargetDependency */,
+				46ACA2CF1D19275000717D7F /* PBXTargetDependency */,
+				46ACA2CD1D19274D00717D7F /* PBXTargetDependency */,
+				46ACA2CB1D19274900717D7F /* PBXTargetDependency */,
+				46ACA2BF1D19274400717D7F /* PBXTargetDependency */,
 				46D37B5B1D12BF8300D5EC47 /* PBXTargetDependency */,
 			);
 			name = PushwooshSample;
@@ -600,6 +680,56 @@
 			isa = PBXTargetDependency;
 			target = 13B07F861A680F5B00A75B9A /* PushwooshSample */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+		46ACA2BF1D19274400717D7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RCTActionSheet;
+			targetProxy = 46ACA2BE1D19274400717D7F /* PBXContainerItemProxy */;
+		};
+		46ACA2CB1D19274900717D7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RCTGeolocation;
+			targetProxy = 46ACA2CA1D19274900717D7F /* PBXContainerItemProxy */;
+		};
+		46ACA2CD1D19274D00717D7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RCTImage;
+			targetProxy = 46ACA2CC1D19274D00717D7F /* PBXContainerItemProxy */;
+		};
+		46ACA2CF1D19275000717D7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = React;
+			targetProxy = 46ACA2CE1D19275000717D7F /* PBXContainerItemProxy */;
+		};
+		46ACA2D11D19275300717D7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RCTLinking;
+			targetProxy = 46ACA2D01D19275300717D7F /* PBXContainerItemProxy */;
+		};
+		46ACA2D31D19275600717D7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RCTNetwork;
+			targetProxy = 46ACA2D21D19275600717D7F /* PBXContainerItemProxy */;
+		};
+		46ACA2D51D19275900717D7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RCTSettings;
+			targetProxy = 46ACA2D41D19275900717D7F /* PBXContainerItemProxy */;
+		};
+		46ACA2D71D19275C00717D7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RCTText;
+			targetProxy = 46ACA2D61D19275C00717D7F /* PBXContainerItemProxy */;
+		};
+		46ACA2D91D19275F00717D7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RCTVibration;
+			targetProxy = 46ACA2D81D19275F00717D7F /* PBXContainerItemProxy */;
+		};
+		46ACA2DB1D19276200717D7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RCTWebSocket;
+			targetProxy = 46ACA2DA1D19276200717D7F /* PBXContainerItemProxy */;
 		};
 		46D37B5B1D12BF8300D5EC47 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
