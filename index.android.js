@@ -91,3 +91,7 @@ Pushwoosh.getTags(
     console.error(error);
   }
 );
+
+Pushwoosh.setUserId("%userId%");
+
+Pushwoosh.postEvent("applicationOpened", { "attribute" : "value" });
