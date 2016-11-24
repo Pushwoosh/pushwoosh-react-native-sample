@@ -12,7 +12,6 @@
 		00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302C01ABCB91800DB3ED1 /* libRCTImage.a */; };
 		00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
 		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
-		00E356F31AD99517003FC87E /* PushwooshSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* PushwooshSampleTests.m */; };
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
 		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
 		139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
@@ -21,9 +20,9 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
-		46ACA2731D13D61F00717D7F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 46ACA2721D13D61F00717D7F /* libz.tbd */; };
-		46ACA2751D13D62500717D7F /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 46ACA2741D13D62500717D7F /* libstdc++.tbd */; };
-		46D37B5C1D12BF8A00D5EC47 /* libPushwooshPlugin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D37B4D1D12BBF000D5EC47 /* libPushwooshPlugin.a */; };
+		46293A5F1DE6E5C6003B3AB9 /* libPushwooshPlugin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46293A3D1DE6E53A003B3AB9 /* libPushwooshPlugin.a */; };
+		46293A621DE6E5CB003B3AB9 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 46293A611DE6E5CB003B3AB9 /* libz.tbd */; };
+		46293A641DE6E5D1003B3AB9 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 46293A631DE6E5D1003B3AB9 /* libstdc++.tbd */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 /* End PBXBuildFile section */
 
@@ -63,13 +62,6 @@
 			remoteGlobalIDString = 832C81801AAF6DEF007FA2F7;
 			remoteInfo = RCTVibration;
 		};
-		00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = PushwooshSample;
-		};
 		139105C01AF99BAD00B5F7CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */;
@@ -91,86 +83,65 @@
 			remoteGlobalIDString = 83CBBA2E1A601D0E00E9B192;
 			remoteInfo = React;
 		};
-		46ACA2BE1D19274400717D7F /* PBXContainerItemProxy */ = {
+		46293A3C1DE6E53A003B3AB9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 58B511DA1A9E6C8500147676;
-			remoteInfo = RCTActionSheet;
-		};
-		46ACA2CA1D19274900717D7F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 00C302B51ABCB90400DB3ED1 /* RCTGeolocation.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 58B511DA1A9E6C8500147676;
-			remoteInfo = RCTGeolocation;
-		};
-		46ACA2CC1D19274D00717D7F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 58B5115C1A9E6B3D00147676;
-			remoteInfo = RCTImage;
-		};
-		46ACA2CE1D19275000717D7F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 83CBBA2D1A601D0E00E9B192;
-			remoteInfo = React;
-		};
-		46ACA2D01D19275300717D7F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 58B511DA1A9E6C8500147676;
-			remoteInfo = RCTLinking;
-		};
-		46ACA2D21D19275600717D7F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 58B511DA1A9E6C8500147676;
-			remoteInfo = RCTNetwork;
-		};
-		46ACA2D41D19275900717D7F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 58B511DA1A9E6C8500147676;
-			remoteInfo = RCTSettings;
-		};
-		46ACA2D61D19275C00717D7F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 58B5119A1A9E6C1200147676;
-			remoteInfo = RCTText;
-		};
-		46ACA2D81D19275F00717D7F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 832C817F1AAF6DEF007FA2F7;
-			remoteInfo = RCTVibration;
-		};
-		46ACA2DA1D19276200717D7F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 3C86DF451ADF2C930047B81A;
-			remoteInfo = RCTWebSocket;
-		};
-		46D37B4C1D12BBF000D5EC47 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 46D37B481D12BBF000D5EC47 /* PushwooshPlugin.xcodeproj */;
+			containerPortal = 46293A381DE6E53A003B3AB9 /* PushwooshPlugin.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 46D37B321D12BB4900D5EC47;
 			remoteInfo = PushwooshPlugin;
 		};
-		46D37B5A1D12BF8300D5EC47 /* PBXContainerItemProxy */ = {
+		46293A421DE6E53A003B3AB9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 46D37B481D12BBF000D5EC47 /* PushwooshPlugin.xcodeproj */;
+			containerPortal = 00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A283A1D9B042B00D4039D;
+			remoteInfo = "RCTImage-tvOS";
+		};
+		46293A461DE6E53A003B3AB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A28471D9B043800D4039D;
+			remoteInfo = "RCTLinking-tvOS";
+		};
+		46293A4A1DE6E53A003B3AB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A28541D9B044C00D4039D;
+			remoteInfo = "RCTNetwork-tvOS";
+		};
+		46293A4E1DE6E53A003B3AB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A28611D9B046600D4039D;
+			remoteInfo = "RCTSettings-tvOS";
+		};
+		46293A521DE6E53A003B3AB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A287B1D9B048500D4039D;
+			remoteInfo = "RCTText-tvOS";
+		};
+		46293A571DE6E53A003B3AB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A28881D9B049200D4039D;
+			remoteInfo = "RCTWebSocket-tvOS";
+		};
+		46293A5B1DE6E53A003B3AB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A28131D9B038B00D4039D;
+			remoteInfo = "React-tvOS";
+		};
+		46293A5D1DE6E5BF003B3AB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46293A381DE6E53A003B3AB9 /* PushwooshPlugin.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 46D37B311D12BB4900D5EC47;
 			remoteInfo = PushwooshPlugin;
@@ -198,7 +169,6 @@
 		00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTImage.xcodeproj; path = "../node_modules/react-native/Libraries/Image/RCTImage.xcodeproj"; sourceTree = "<group>"; };
 		00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTNetwork.xcodeproj; path = "../node_modules/react-native/Libraries/Network/RCTNetwork.xcodeproj"; sourceTree = "<group>"; };
 		00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTVibration.xcodeproj; path = "../node_modules/react-native/Libraries/Vibration/RCTVibration.xcodeproj"; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* PushwooshSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PushwooshSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* PushwooshSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushwooshSampleTests.m; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
@@ -211,29 +181,22 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = PushwooshSample/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = PushwooshSample/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
-		46ACA2721D13D61F00717D7F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		46ACA2741D13D62500717D7F /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
-		46D37B481D12BBF000D5EC47 /* PushwooshPlugin.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PushwooshPlugin.xcodeproj; path = "../node_modules/pushwoosh-react-native-plugin/src/ios/PushwooshPlugin.xcodeproj"; sourceTree = "<group>"; };
-		46E0B4471D8FFB36004908AF /* PushwooshSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = PushwooshSample.entitlements; path = PushwooshSample/PushwooshSample.entitlements; sourceTree = "<group>"; };
+		46293A381DE6E53A003B3AB9 /* PushwooshPlugin.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PushwooshPlugin.xcodeproj; path = "../node_modules/pushwoosh-react-native-plugin/src/ios/PushwooshPlugin.xcodeproj"; sourceTree = "<group>"; };
+		46293A611DE6E5CB003B3AB9 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		46293A631DE6E5D1003B3AB9 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		46293A651DE6E93D003B3AB9 /* PushwooshSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = PushwooshSample.entitlements; path = PushwooshSample/PushwooshSample.entitlements; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		00E356EB1AD99517003FC87E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46ACA2751D13D62500717D7F /* libstdc++.tbd in Frameworks */,
-				46ACA2731D13D61F00717D7F /* libz.tbd in Frameworks */,
-				46D37B5C1D12BF8A00D5EC47 /* libPushwooshPlugin.a in Frameworks */,
+				46293A641DE6E5D1003B3AB9 /* libstdc++.tbd in Frameworks */,
+				46293A621DE6E5CB003B3AB9 /* libz.tbd in Frameworks */,
+				46293A5F1DE6E5C6003B3AB9 /* libPushwooshPlugin.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
 				00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */,
@@ -270,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				00C302C01ABCB91800DB3ED1 /* libRCTImage.a */,
+				46293A431DE6E53A003B3AB9 /* libRCTImage-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -278,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */,
+				46293A4B1DE6E53A003B3AB9 /* libRCTNetwork-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -311,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				139105C11AF99BAD00B5F7CC /* libRCTSettings.a */,
+				46293A4F1DE6E53A003B3AB9 /* libRCTSettings-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -319,6 +285,7 @@
 			isa = PBXGroup;
 			children = (
 				139FDEF41B06529B00C62182 /* libRCTWebSocket.a */,
+				46293A581DE6E53A003B3AB9 /* libRCTWebSocket-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -326,7 +293,7 @@
 		13B07FAE1A68108700A75B9A /* PushwooshSample */ = {
 			isa = PBXGroup;
 			children = (
-				46E0B4471D8FFB36004908AF /* PushwooshSample.entitlements */,
+				46293A651DE6E93D003B3AB9 /* PushwooshSample.entitlements */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -342,22 +309,33 @@
 			isa = PBXGroup;
 			children = (
 				146834041AC3E56700842450 /* libReact.a */,
+				46293A5C1DE6E53A003B3AB9 /* libReact-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		46D37B491D12BBF000D5EC47 /* Products */ = {
+		46293A391DE6E53A003B3AB9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				46D37B4D1D12BBF000D5EC47 /* libPushwooshPlugin.a */,
+				46293A3D1DE6E53A003B3AB9 /* libPushwooshPlugin.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		46293A601DE6E5CB003B3AB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46293A631DE6E5D1003B3AB9 /* libstdc++.tbd */,
+				46293A611DE6E5CB003B3AB9 /* libz.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		78C398B11ACF4ADC00677621 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				78C398B91ACF4ADC00677621 /* libRCTLinking.a */,
+				46293A471DE6E53A003B3AB9 /* libRCTLinking-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -365,7 +343,6 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				46D37B481D12BBF000D5EC47 /* PushwooshPlugin.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
 				00C302B51ABCB90400DB3ED1 /* RCTGeolocation.xcodeproj */,
@@ -384,6 +361,7 @@
 			isa = PBXGroup;
 			children = (
 				832341B51AAA6A8300B99B32 /* libRCTText.a */,
+				46293A531DE6E53A003B3AB9 /* libRCTText-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -391,12 +369,12 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				46ACA2741D13D62500717D7F /* libstdc++.tbd */,
-				46ACA2721D13D61F00717D7F /* libz.tbd */,
+				46293A381DE6E53A003B3AB9 /* PushwooshPlugin.xcodeproj */,
 				13B07FAE1A68108700A75B9A /* PushwooshSample */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* PushwooshSampleTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
+				46293A601DE6E5CB003B3AB9 /* Frameworks */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -406,7 +384,6 @@
 			isa = PBXGroup;
 			children = (
 				13B07F961A680F5B00A75B9A /* PushwooshSample.app */,
-				00E356EE1AD99517003FC87E /* PushwooshSampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -414,24 +391,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* PushwooshSampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "PushwooshSampleTests" */;
-			buildPhases = (
-				00E356EA1AD99517003FC87E /* Sources */,
-				00E356EB1AD99517003FC87E /* Frameworks */,
-				00E356EC1AD99517003FC87E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				00E356F51AD99517003FC87E /* PBXTargetDependency */,
-			);
-			name = PushwooshSampleTests;
-			productName = PushwooshSampleTests;
-			productReference = 00E356EE1AD99517003FC87E /* PushwooshSampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		13B07F861A680F5B00A75B9A /* PushwooshSample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "PushwooshSample" */;
@@ -444,17 +403,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				46ACA2DB1D19276200717D7F /* PBXTargetDependency */,
-				46ACA2D91D19275F00717D7F /* PBXTargetDependency */,
-				46ACA2D71D19275C00717D7F /* PBXTargetDependency */,
-				46ACA2D51D19275900717D7F /* PBXTargetDependency */,
-				46ACA2D31D19275600717D7F /* PBXTargetDependency */,
-				46ACA2D11D19275300717D7F /* PBXTargetDependency */,
-				46ACA2CF1D19275000717D7F /* PBXTargetDependency */,
-				46ACA2CD1D19274D00717D7F /* PBXTargetDependency */,
-				46ACA2CB1D19274900717D7F /* PBXTargetDependency */,
-				46ACA2BF1D19274400717D7F /* PBXTargetDependency */,
-				46D37B5B1D12BF8300D5EC47 /* PBXTargetDependency */,
+				46293A5E1DE6E5BF003B3AB9 /* PBXTargetDependency */,
 			);
 			name = PushwooshSample;
 			productName = "Hello World";
@@ -470,10 +419,6 @@
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
-					00E356ED1AD99517003FC87E = {
-						CreatedOnToolsVersion = 6.2;
-						TestTargetID = 13B07F861A680F5B00A75B9A;
-					};
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = 9YV8BDW6YQ;
 						ProvisioningStyle = Manual;
@@ -498,8 +443,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 46D37B491D12BBF000D5EC47 /* Products */;
-					ProjectRef = 46D37B481D12BBF000D5EC47 /* PushwooshPlugin.xcodeproj */;
+					ProductGroup = 46293A391DE6E53A003B3AB9 /* Products */;
+					ProjectRef = 46293A381DE6E53A003B3AB9 /* PushwooshPlugin.xcodeproj */;
 				},
 				{
 					ProductGroup = 00C302A81ABCB8CE00DB3ED1 /* Products */;
@@ -545,7 +490,6 @@
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* PushwooshSample */,
-				00E356ED1AD99517003FC87E /* PushwooshSampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -607,11 +551,60 @@
 			remoteRef = 146834031AC3E56700842450 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		46D37B4D1D12BBF000D5EC47 /* libPushwooshPlugin.a */ = {
+		46293A3D1DE6E53A003B3AB9 /* libPushwooshPlugin.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libPushwooshPlugin.a;
-			remoteRef = 46D37B4C1D12BBF000D5EC47 /* PBXContainerItemProxy */;
+			remoteRef = 46293A3C1DE6E53A003B3AB9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		46293A431DE6E53A003B3AB9 /* libRCTImage-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTImage-tvOS.a";
+			remoteRef = 46293A421DE6E53A003B3AB9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		46293A471DE6E53A003B3AB9 /* libRCTLinking-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTLinking-tvOS.a";
+			remoteRef = 46293A461DE6E53A003B3AB9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		46293A4B1DE6E53A003B3AB9 /* libRCTNetwork-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTNetwork-tvOS.a";
+			remoteRef = 46293A4A1DE6E53A003B3AB9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		46293A4F1DE6E53A003B3AB9 /* libRCTSettings-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTSettings-tvOS.a";
+			remoteRef = 46293A4E1DE6E53A003B3AB9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		46293A531DE6E53A003B3AB9 /* libRCTText-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTText-tvOS.a";
+			remoteRef = 46293A521DE6E53A003B3AB9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		46293A581DE6E53A003B3AB9 /* libRCTWebSocket-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTWebSocket-tvOS.a";
+			remoteRef = 46293A571DE6E53A003B3AB9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		46293A5C1DE6E53A003B3AB9 /* libReact-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libReact-tvOS.a";
+			remoteRef = 46293A5B1DE6E53A003B3AB9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		78C398B91ACF4ADC00677621 /* libRCTLinking.a */ = {
@@ -631,13 +624,6 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
-		00E356EC1AD99517003FC87E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		13B07F8E1A680F5B00A75B9A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -667,14 +653,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		00E356EA1AD99517003FC87E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				00E356F31AD99517003FC87E /* PushwooshSampleTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		13B07F871A680F5B00A75B9A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -687,65 +665,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* PushwooshSample */;
-			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
-		};
-		46ACA2BF1D19274400717D7F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RCTActionSheet;
-			targetProxy = 46ACA2BE1D19274400717D7F /* PBXContainerItemProxy */;
-		};
-		46ACA2CB1D19274900717D7F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RCTGeolocation;
-			targetProxy = 46ACA2CA1D19274900717D7F /* PBXContainerItemProxy */;
-		};
-		46ACA2CD1D19274D00717D7F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RCTImage;
-			targetProxy = 46ACA2CC1D19274D00717D7F /* PBXContainerItemProxy */;
-		};
-		46ACA2CF1D19275000717D7F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = React;
-			targetProxy = 46ACA2CE1D19275000717D7F /* PBXContainerItemProxy */;
-		};
-		46ACA2D11D19275300717D7F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RCTLinking;
-			targetProxy = 46ACA2D01D19275300717D7F /* PBXContainerItemProxy */;
-		};
-		46ACA2D31D19275600717D7F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RCTNetwork;
-			targetProxy = 46ACA2D21D19275600717D7F /* PBXContainerItemProxy */;
-		};
-		46ACA2D51D19275900717D7F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RCTSettings;
-			targetProxy = 46ACA2D41D19275900717D7F /* PBXContainerItemProxy */;
-		};
-		46ACA2D71D19275C00717D7F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RCTText;
-			targetProxy = 46ACA2D61D19275C00717D7F /* PBXContainerItemProxy */;
-		};
-		46ACA2D91D19275F00717D7F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RCTVibration;
-			targetProxy = 46ACA2D81D19275F00717D7F /* PBXContainerItemProxy */;
-		};
-		46ACA2DB1D19276200717D7F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RCTWebSocket;
-			targetProxy = 46ACA2DA1D19276200717D7F /* PBXContainerItemProxy */;
-		};
-		46D37B5B1D12BF8300D5EC47 /* PBXTargetDependency */ = {
+		46293A5E1DE6E5BF003B3AB9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PushwooshPlugin;
-			targetProxy = 46D37B5A1D12BF8300D5EC47 /* PBXContainerItemProxy */;
+			targetProxy = 46293A5D1DE6E5BF003B3AB9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -762,62 +685,30 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		00E356F61AD99517003FC87E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = PushwooshSampleTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PushwooshSample.app/PushwooshSample";
-			};
-			name = Debug;
-		};
-		00E356F71AD99517003FC87E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = PushwooshSampleTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PushwooshSample.app/PushwooshSample";
-			};
-			name = Release;
-		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = PushwooshSample/PushwooshSample.entitlements;
+				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = 9YV8BDW6YQ;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 				);
 				INFOPLIST_FILE = PushwooshSample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
+					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pushwoosh.demoapp;
 				PRODUCT_NAME = PushwooshSample;
 				PROVISIONING_PROFILE = "7fb77633-24d1-4017-94eb-d0d600553224";
 				PROVISIONING_PROFILE_SPECIFIER = "iOS Development";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -827,27 +718,24 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = PushwooshSample/PushwooshSample.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9YV8BDW6YQ;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 				);
 				INFOPLIST_FILE = PushwooshSample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
+					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pushwoosh.demoapp;
 				PRODUCT_NAME = PushwooshSample;
 				PROVISIONING_PROFILE = "3653de08-dd87-4b8d-8061-5beef66215c6";
 				PROVISIONING_PROFILE_SPECIFIER = "Universal In House";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
@@ -890,7 +778,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -930,7 +818,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -940,15 +828,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "PushwooshSampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				00E356F61AD99517003FC87E /* Debug */,
-				00E356F71AD99517003FC87E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "PushwooshSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
