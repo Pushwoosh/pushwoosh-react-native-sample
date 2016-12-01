@@ -705,6 +705,7 @@
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pushwoosh.demoapp;
 				PRODUCT_NAME = PushwooshSample;
 				PROVISIONING_PROFILE = "7fb77633-24d1-4017-94eb-d0d600553224";
 				PROVISIONING_PROFILE_SPECIFIER = "iOS Development";
@@ -732,6 +733,7 @@
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pushwoosh.demoapp;
 				PRODUCT_NAME = PushwooshSample;
 				PROVISIONING_PROFILE = "3653de08-dd87-4b8d-8061-5beef66215c6";
 				PROVISIONING_PROFILE_SPECIFIER = "Universal In House";

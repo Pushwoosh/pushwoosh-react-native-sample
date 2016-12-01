@@ -9,7 +9,8 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View,
+  DeviceEventEmitter
 } from 'react-native';
 
 class PushwooshSample extends Component {
@@ -51,19 +52,14 @@ const styles = StyleSheet.create({
 
 AppRegistry.registerComponent('PushwooshSample', () => PushwooshSample);
 
-var Pushwoosh = require('pushwoosh-react-native-plugin');
+DeviceEventEmitter.addListener('pushOpened', (e: Event) => {
+  console.warn("pushOpened: " + JSON.stringify(e));
+  alert(JSON.stringify(e));
+});
+
+const Pushwoosh = require('pushwoosh-react-native-plugin');
 
 Pushwoosh.init({ "pw_appid" : "4FC89B6D14A655.46488481" , "project_number" : "60756016005" });
-
-var pushHandler = (pushData) => {
-  console.warn("Push data: " + JSON.stringify(pushData));
-  alert(JSON.stringify(pushData));
-
-  // A native module is supposed to invoke its callback only once so we have to register callback again after it is called
-  Pushwoosh.onPushOpen(pushHandler);
-}
-
-Pushwoosh.onPushOpen(pushHandler);
 
 Pushwoosh.register(
   (token) => {
@@ -81,17 +77,38 @@ Pushwoosh.getHwid((hwid) => {
   console.warn("Pushwoosh hwid: " + hwid);
 });
 
-Pushwoosh.setTags({ "testTag" : "testValue" });
+// Segmentation example
+//Pushwoosh.setTags({ "testTag" : "testValue" });
+//Pushwoosh.getTags(
+//  (tags) => {
+//    console.warn("Application tags: " + JSON.stringify(tags));
+//  },
+//  (error) => {
+//    console.error(error);
+//  }
+//);
 
-Pushwoosh.getTags(
-  (tags) => {
-    console.warn("Application tags: " + JSON.stringify(tags));
-  },
-  (error) => {
-    console.error(error);
-  }
-);
 
-Pushwoosh.setUserId("%userId%");
+// In-App messagin example
+//Pushwoosh.setUserId("%userId%");
+//Pushwoosh.postEvent("applicationOpened", { "attribute" : "value" });
 
-Pushwoosh.postEvent("applicationOpened", { "attribute" : "value" });
+// Geolocation tracking example
+//Pushwoosh.startLocationTracking();
+//Pushwoosh.stopLocationTracking();
+
+// Application icon badge number example
+//Pushwoosh.setApplicationIconBadgeNumber(2);
+//Pushwoosh.addToApplicationIconBadgeNumber(2);
+//Pushwoosh.getApplicationIconBadgeNumber((badgeNumber) => {
+//  console.warn("Application icon badge number = " + badgeNumber);
+//});
+
+
+// Notification customization example
+//Pushwoosh.setMultiNotificationMode(true);
+//Pushwoosh.setLightScreenOnNotification(true);
+//Pushwoosh.setEnableLED(true);
+//Pushwoosh.setColorLED(42);
+//Pushwoosh.setSoundType(1);
+//Pushwoosh.setVibrateType(1);
