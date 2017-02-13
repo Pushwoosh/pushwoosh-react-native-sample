@@ -10,10 +10,12 @@ import {
   StyleSheet,
   Text,
   View,
-  DeviceEventEmitter
+  DeviceEventEmitter,
+  NativeEventEmitter,
+  NativeModules
 } from 'react-native';
 
-class PushwooshSample extends Component {
+export default class PushwooshSample extends Component {
   render() {
     return (
       <View style={styles.container}>
@@ -58,9 +60,16 @@ DeviceEventEmitter.addListener('pushOpened', (e: Event) => {
   alert(JSON.stringify(e));
 });
 
+// Alternative way
+ // const pushwooshEmitter = new NativeEventEmitter(NativeModules.Pushwoosh);
+ // pushwooshEmitter.addListener('pushOpened', (e: Event) => {
+ //   console.warn("pushOpened: " + JSON.stringify(e));
+ //   alert(JSON.stringify(e));
+ // });
+
 const Pushwoosh = require('pushwoosh-react-native-plugin');
 
-Pushwoosh.init({ "pw_appid" : "4FC89B6D14A655.46488481" });
+Pushwoosh.init({ "pw_appid" : "PUSHWOOSH_APP_CODE" });
 
 Pushwoosh.register(
   (token) => {
@@ -77,6 +86,14 @@ Pushwoosh.register(
 Pushwoosh.getHwid((hwid) => {
   console.warn("Pushwoosh hwid: " + hwid);
 });
+
+// Deprecated method
+// var _pushHandler = function (pushData) {
+//   console.warn("pushOpened: " + JSON.stringify(pushData));
+//   alert(JSON.stringify(pushData));
+//   Pushwoosh.onPushOpen(_pushHandler);
+// };
+// Pushwoosh.onPushOpen(_pushHandler);
 
 // Segmentation example
 //Pushwoosh.setTags({ "testTag" : "testValue" });

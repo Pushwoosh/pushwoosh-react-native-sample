@@ -13,7 +13,7 @@ import {
   DeviceEventEmitter
 } from 'react-native';
 
-class PushwooshSample extends Component {
+export default class PushwooshSample extends Component {
   render() {
     return (
       <View style={styles.container}>
@@ -24,6 +24,7 @@ class PushwooshSample extends Component {
           To get started, edit index.android.js
         </Text>
         <Text style={styles.instructions}>
+          Double tap R on your keyboard to reload,{'\n'}
           Shake or press menu button for dev menu
         </Text>
       </View>
@@ -59,7 +60,7 @@ DeviceEventEmitter.addListener('pushOpened', (e: Event) => {
 
 const Pushwoosh = require('pushwoosh-react-native-plugin');
 
-Pushwoosh.init({ "pw_appid" : "4FC89B6D14A655.46488481" , "project_number" : "60756016005" });
+Pushwoosh.init({ "pw_appid" : "PUSHWOOSH_APP_CODE" , "project_number" : "FCM_SENDER_ID" });
 
 Pushwoosh.register(
   (token) => {
