@@ -1,6 +1,5 @@
 rootProject.name = 'PushwooshSample'
+include ':pushwoosh-react-native-plugin'
+project(':pushwoosh-react-native-plugin').projectDir = new File(rootProject.projectDir, '../node_modules/pushwoosh-react-native-plugin/src/android')
 
 include ':app'
-include ':pushwooshplugin'
-project(':pushwooshplugin').projectDir = new File(rootProject.projectDir, '../node_modules/pushwoosh-react-native-plugin/src/android')
-

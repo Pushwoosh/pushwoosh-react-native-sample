@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -35,11 +34,11 @@
 		2D02E4C91E0B4AEC006451C7 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* PushwooshSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* PushwooshSampleTests.m */; };
 		4600B0451E51B4EA00B68025 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4600B0441E51B4EA00B68025 /* UserNotifications.framework */; };
-		46F467391E516C9400270090 /* libPushwooshPlugin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46F4671F1E516C8100270090 /* libPushwooshPlugin.a */; };
-		46F467481E516D5000270090 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 46F467471E516D5000270090 /* libstdc++.tbd */; };
-		46F467641E516D5600270090 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 46F467631E516D5600270090 /* libz.tbd */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		A1211048B07F430797C12CDE /* libPushwooshPlugin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D8D894A5944CF2BDE59C24 /* libPushwooshPlugin.a */; };
+		DB75B2ECB02146DAB9CCDDE1 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9A16152C7349B081D8D592 /* libstdc++.tbd */; };
+		6550E6BB1CF04B41BD64D6F6 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 74674EB6F8C04EE19B0FFBCC /* libz.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -204,13 +203,6 @@
 			remoteGlobalIDString = 3D3CD9181DE5FBD800167DC4;
 			remoteInfo = "jschelpers-tvOS";
 		};
-		46F4671E1E516C8100270090 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 46F4671A1E516C8000270090 /* PushwooshPlugin.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 46D37B321D12BB4900D5EC47;
-			remoteInfo = PushwooshPlugin;
-		};
 		5E9157321DD0AC6500FF2AA8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */;
@@ -264,13 +256,14 @@
 		2D02E47B1E0B4A5D006451C7 /* PushwooshSample-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PushwooshSample-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* PushwooshSample-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PushwooshSample-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4600B0441E51B4EA00B68025 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
-		46F4671A1E516C8000270090 /* PushwooshPlugin.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PushwooshPlugin.xcodeproj; path = "../node_modules/pushwoosh-react-native-plugin/src/ios/PushwooshPlugin.xcodeproj"; sourceTree = "<group>"; };
-		46F467471E516D5000270090 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
-		46F467631E516D5600270090 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		46F467651E516EAE00270090 /* PushwooshSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = PushwooshSample.entitlements; path = PushwooshSample/PushwooshSample.entitlements; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		2B5F11CA534E40FE950702D5 /* PushwooshPlugin.xcodeproj */ = {isa = PBXFileReference; name = "PushwooshPlugin.xcodeproj"; path = "../node_modules/pushwoosh-react-native-plugin/src/ios/PushwooshPlugin.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		D9D8D894A5944CF2BDE59C24 /* libPushwooshPlugin.a */ = {isa = PBXFileReference; name = "libPushwooshPlugin.a"; path = "libPushwooshPlugin.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		3F9A16152C7349B081D8D592 /* libstdc++.tbd */ = {isa = PBXFileReference; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = sourcecode.text-based-dylib-definition; explicitFileType = undefined; includeInIndex = 0; };
+		74674EB6F8C04EE19B0FFBCC /* libz.tbd */ = {isa = PBXFileReference; name = "libz.tbd"; path = "usr/lib/libz.tbd"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = sourcecode.text-based-dylib-definition; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,9 +280,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4600B0451E51B4EA00B68025 /* UserNotifications.framework in Frameworks */,
-				46F467641E516D5600270090 /* libz.tbd in Frameworks */,
-				46F467481E516D5000270090 /* libstdc++.tbd in Frameworks */,
-				46F467391E516C9400270090 /* libPushwooshPlugin.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
@@ -301,6 +291,9 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
+				A1211048B07F430797C12CDE /* libPushwooshPlugin.a in Frameworks */,
+				DB75B2ECB02146DAB9CCDDE1 /* libstdc++.tbd in Frameworks */,
+				6550E6BB1CF04B41BD64D6F6 /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,20 +429,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		46F4671B1E516C8000270090 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				46F4671F1E516C8100270090 /* libPushwooshPlugin.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		46F467461E516D5000270090 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				4600B0441E51B4EA00B68025 /* UserNotifications.framework */,
-				46F467631E516D5600270090 /* libz.tbd */,
-				46F467471E516D5000270090 /* libstdc++.tbd */,
+				3F9A16152C7349B081D8D592 /* libstdc++.tbd */,
+				74674EB6F8C04EE19B0FFBCC /* libz.tbd */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -475,7 +460,6 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				46F4671A1E516C8000270090 /* PushwooshPlugin.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
@@ -487,6 +471,7 @@
 				832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */,
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
+				2B5F11CA534E40FE950702D5 /* PushwooshPlugin.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -605,7 +590,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 610;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -649,10 +634,6 @@
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
-				{
-					ProductGroup = 46F4671B1E516C8000270090 /* Products */;
-					ProjectRef = 46F4671A1E516C8000270090 /* PushwooshPlugin.xcodeproj */;
-				},
 				{
 					ProductGroup = 00C302A81ABCB8CE00DB3ED1 /* Products */;
 					ProjectRef = 00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */;
@@ -856,13 +837,6 @@
 			remoteRef = 3DAD3EAE1DF850E9000B6D8A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		46F4671F1E516C8100270090 /* libPushwooshPlugin.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libPushwooshPlugin.a;
-			remoteRef = 46F4671E1E516C8100270090 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1040,6 +1014,10 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PushwooshSample.app/PushwooshSample";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 			};
 			name = Debug;
 		};
@@ -1058,6 +1036,10 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PushwooshSample.app/PushwooshSample";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 			};
 			name = Release;
 		};
@@ -1130,6 +1112,10 @@
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 			};
 			name = Debug;
 		};
@@ -1156,6 +1142,10 @@
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 			};
 			name = Release;
 		};
@@ -1177,6 +1167,10 @@
 				SDKROOT = appletvos;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PushwooshSample-tvOS.app/PushwooshSample-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 			};
 			name = Debug;
 		};
@@ -1198,6 +1192,10 @@
 				SDKROOT = appletvos;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PushwooshSample-tvOS.app/PushwooshSample-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 			};
 			name = Release;
 		};
