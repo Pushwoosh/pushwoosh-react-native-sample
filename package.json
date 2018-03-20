@@ -7,7 +7,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "pushwoosh-react-native-plugin": "^3.1.0",
+    "pushwoosh-react-native-plugin": "5.5.5",
     "react": "15.4.2",
     "react-native": "0.41.2"
   },
