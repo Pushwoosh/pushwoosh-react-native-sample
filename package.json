@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "path": "^0.12.7",
-    "pushwoosh-react-native-plugin": "5.8.0",
+    "pushwoosh-react-native-plugin": "^5.12.0",
     "react": "16.6.3",
     "react-native": "0.58.6"
   },
@@ -16,7 +16,8 @@
     "babel-jest": "18.0.0",
     "babel-preset-react-native": "^5",
     "jest": "18.1.0",
-    "react-test-renderer": "15.4.2"
+    "react-test-renderer": "15.4.2",
+    "schedule": "^0.4.0"
   },
   "jest": {
     "preset": "react-native"
