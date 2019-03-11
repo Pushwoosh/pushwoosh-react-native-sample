@@ -165,5 +165,6 @@
     <orderEntry type="library" name="Gradle: com.android.support:swiperefreshlayout:28.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.squareup.okio:okio:1.15.0@jar" level="project" />
     <orderEntry type="module" module-name="pushwoosh-react-native-plugin" />
+    <orderEntry type="module" module-name="pushwoosh-geozones-react-native-plugin" />
   </component>
 </module>

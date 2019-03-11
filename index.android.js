@@ -95,8 +95,9 @@ Pushwoosh.getHwid((hwid) => {
 //Pushwoosh.postEvent("applicationOpened", { "attribute" : "value" });
 
 // Geolocation tracking example
-//Pushwoosh.startLocationTracking();
-//Pushwoosh.stopLocationTracking();
+// import PushwooshGeozones from 'pushwoosh-geozones-react-native-plugin';
+// Pushwoosh.startLocationTracking();
+// Pushwoosh.stopLocationTracking();
 
 // Application icon badge number example
 //Pushwoosh.setApplicationIconBadgeNumber(2);

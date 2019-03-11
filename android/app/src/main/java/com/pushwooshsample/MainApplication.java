@@ -4,6 +4,7 @@ import android.app.Application;
 import android.util.Log;
 
 import com.facebook.react.ReactApplication;
+import com.pushwoosh.geozones.reactnativeplugin.PushwooshGeozonesPackage;
 import com.pushwoosh.reactnativeplugin.PushwooshPackage;
 import com.pushwoosh.reactnativeplugin.PushwooshPackage;
 import com.facebook.react.ReactInstanceManager;
@@ -28,6 +29,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new PushwooshGeozonesPackage(),
           new PushwooshPackage()
       );
     }

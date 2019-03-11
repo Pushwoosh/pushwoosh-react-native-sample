@@ -134,6 +134,7 @@ android {
 }
 
 dependencies {
+    implementation project(':pushwoosh-geozones-react-native-plugin')
     implementation project(':pushwoosh-react-native-plugin')
     compile fileTree(dir: "libs", include: ["*.jar"])
     compile "com.android.support:appcompat-v7:27.+"

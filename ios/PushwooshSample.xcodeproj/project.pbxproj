@@ -41,6 +41,7 @@
 		4BF08DC07846445F9B794E21 /* libPushwooshPlugin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6AA560967F4CA885705033 /* libPushwooshPlugin.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
+		BD4389EE51424D8B8B2758C3 /* libPushwooshGeozonesPlugin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD98918C85E4EDFAEE78CFB /* libPushwooshGeozonesPlugin.a */; };
 		ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED297162215061F000B7C4FE /* JavaScriptCore.framework */; };
 		ED2971652150620600B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2971642150620600B7C4FE /* JavaScriptCore.framework */; };
 /* End PBXBuildFile section */
@@ -143,6 +144,13 @@
 			proxyType = 2;
 			remoteGlobalIDString = 46D37B321D12BB4900D5EC47;
 			remoteInfo = PushwooshPlugin;
+		};
+		2A500C2F2236ABAA00D7D17B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6B72560EF144DE5A7AD605B /* PushwooshGeozonesPlugin.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 46D37B321D12BB4900D5EC47;
+			remoteInfo = PushwooshGeozonesPlugin;
 		};
 		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -357,8 +365,10 @@
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		ABD98918C85E4EDFAEE78CFB /* libPushwooshGeozonesPlugin.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libPushwooshGeozonesPlugin.a; sourceTree = "<group>"; };
 		ACB81FF278E34CCDA68D3607 /* libz.tbd */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
+		B6B72560EF144DE5A7AD605B /* PushwooshGeozonesPlugin.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = PushwooshGeozonesPlugin.xcodeproj; path = "../node_modules/pushwoosh-geozones-react-native-plugin/src/ios/PushwooshGeozonesPlugin.xcodeproj"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F9D982EE48E24D99879604C0 /* PushwooshPlugin.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = PushwooshPlugin.xcodeproj; path = "../node_modules/pushwoosh-react-native-plugin/src/ios/PushwooshPlugin.xcodeproj"; sourceTree = "<group>"; };
@@ -393,6 +403,7 @@
 				4BF08DC07846445F9B794E21 /* libPushwooshPlugin.a in Frameworks */,
 				40846EDAE2464168A73D4DA9 /* libstdc++.tbd in Frameworks */,
 				317C2F215D7C413AB3930920 /* libz.tbd in Frameworks */,
+				BD4389EE51424D8B8B2758C3 /* libPushwooshGeozonesPlugin.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,6 +555,7 @@
 			isa = PBXGroup;
 			children = (
 				3F6AA560967F4CA885705033 /* libPushwooshPlugin.a */,
+				ABD98918C85E4EDFAEE78CFB /* libPushwooshGeozonesPlugin.a */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -552,6 +564,14 @@
 			isa = PBXGroup;
 			children = (
 				2317B6DB222E9929003AC8C2 /* libPushwooshPlugin.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A500C2C2236ABAA00D7D17B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A500C302236ABAA00D7D17B /* libPushwooshGeozonesPlugin.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -602,6 +622,7 @@
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				F9D982EE48E24D99879604C0 /* PushwooshPlugin.xcodeproj */,
+				B6B72560EF144DE5A7AD605B /* PushwooshGeozonesPlugin.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -773,6 +794,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = 2A500C2C2236ABAA00D7D17B /* Products */;
+					ProjectRef = B6B72560EF144DE5A7AD605B /* PushwooshGeozonesPlugin.xcodeproj */;
+				},
+				{
 					ProductGroup = 2317B6D7222E9928003AC8C2 /* Products */;
 					ProjectRef = F9D982EE48E24D99879604C0 /* PushwooshPlugin.xcodeproj */;
 				},
@@ -925,6 +950,13 @@
 			fileType = archive.ar;
 			path = libPushwooshPlugin.a;
 			remoteRef = 2317B6DA222E9929003AC8C2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2A500C302236ABAA00D7D17B /* libPushwooshGeozonesPlugin.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPushwooshGeozonesPlugin.a;
+			remoteRef = 2A500C2F2236ABAA00D7D17B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		2D16E6721FA4F8DC00B85C8A /* libRCTBlob-tvOS.a */ = {
@@ -1246,12 +1278,14 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/pushwoosh-react-native-plugin/src/ios/**",
+					"$(SRCROOT)/../node_modules/pushwoosh-geozones-react-native-plugin/src/ios/PushwooshGeozonesPlugin/**",
 				);
 				INFOPLIST_FILE = PushwooshSampleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1275,12 +1309,14 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/pushwoosh-react-native-plugin/src/ios/**",
+					"$(SRCROOT)/../node_modules/pushwoosh-geozones-react-native-plugin/src/ios/PushwooshGeozonesPlugin/**",
 				);
 				INFOPLIST_FILE = PushwooshSampleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1306,6 +1342,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/pushwoosh-react-native-plugin/src/ios/**",
+					"$(SRCROOT)/../node_modules/pushwoosh-geozones-react-native-plugin/src/ios/PushwooshGeozonesPlugin/**",
 				);
 				INFOPLIST_FILE = PushwooshSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1332,6 +1369,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/pushwoosh-react-native-plugin/src/ios/**",
+					"$(SRCROOT)/../node_modules/pushwoosh-geozones-react-native-plugin/src/ios/PushwooshGeozonesPlugin/**",
 				);
 				INFOPLIST_FILE = PushwooshSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1362,11 +1400,13 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/pushwoosh-react-native-plugin/src/ios/**",
+					"$(SRCROOT)/../node_modules/pushwoosh-geozones-react-native-plugin/src/ios/PushwooshGeozonesPlugin/**",
 				);
 				INFOPLIST_FILE = "PushwooshSample-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1396,11 +1436,13 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/pushwoosh-react-native-plugin/src/ios/**",
+					"$(SRCROOT)/../node_modules/pushwoosh-geozones-react-native-plugin/src/ios/PushwooshGeozonesPlugin/**",
 				);
 				INFOPLIST_FILE = "PushwooshSample-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1429,11 +1471,13 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/pushwoosh-react-native-plugin/src/ios/**",
+					"$(SRCROOT)/../node_modules/pushwoosh-geozones-react-native-plugin/src/ios/PushwooshGeozonesPlugin/**",
 				);
 				INFOPLIST_FILE = "PushwooshSample-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1462,11 +1506,13 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/pushwoosh-react-native-plugin/src/ios/**",
+					"$(SRCROOT)/../node_modules/pushwoosh-geozones-react-native-plugin/src/ios/PushwooshGeozonesPlugin/**",
 				);
 				INFOPLIST_FILE = "PushwooshSample-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (

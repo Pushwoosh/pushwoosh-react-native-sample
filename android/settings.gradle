@@ -1,4 +1,6 @@
 rootProject.name = 'PushwooshSample'
+include ':pushwoosh-geozones-react-native-plugin'
+project(':pushwoosh-geozones-react-native-plugin').projectDir = new File(rootProject.projectDir, '../node_modules/pushwoosh-geozones-react-native-plugin/src/android')
 include ':pushwoosh-react-native-plugin'
 project(':pushwoosh-react-native-plugin').projectDir = new File(rootProject.projectDir, '../node_modules/pushwoosh-react-native-plugin/src/android')
 
