@@ -15,6 +15,7 @@ import {
   NativeModules
 } from 'react-native';
 
+
 export default class PushwooshSample extends Component {
   render() {
     return (
@@ -53,6 +54,9 @@ const styles = StyleSheet.create({
   },
 });
 
+import PushwooshGeozones from 'pushwoosh-geozones-react-native-plugin';
+import Pushwoosh from 'pushwoosh-react-native-plugin';
+
 AppRegistry.registerComponent('PushwooshSample', () => PushwooshSample);
 
 DeviceEventEmitter.addListener('pushOpened', (e: Event) => {
@@ -67,15 +71,17 @@ DeviceEventEmitter.addListener('pushOpened', (e: Event) => {
  //   alert(JSON.stringify(e));
  // });
 
-const Pushwoosh = require('pushwoosh-react-native-plugin');
-
-Pushwoosh.init({ "pw_appid" : "PUSHWOOSH_APP_CODE" });
+Pushwoosh.init({ "pw_appid" : "PUSHWOOSH_APP_CODE", "project_number":"PROJECT_NUMBER"});
 
 Pushwoosh.register(
   (token) => {
     console.warn("Registered for pushes: " + token);
     Pushwoosh.getPushToken(function(token) {
         console.warn("Push token: " + token);
+
+        // Geolocation tracking example
+        PushwooshGeozones.startLocationTracking();
+        //PushwooshGeozones.stopLocationTracking();
     });
   },
   (error) => {
@@ -87,13 +93,10 @@ Pushwoosh.getHwid((hwid) => {
   console.warn("Pushwoosh hwid: " + hwid);
 });
 
-// Deprecated method
-// var _pushHandler = function (pushData) {
-//   console.warn("pushOpened: " + JSON.stringify(pushData));
-//   alert(JSON.stringify(pushData));
-//   Pushwoosh.onPushOpen(_pushHandler);
-// };
-// Pushwoosh.onPushOpen(_pushHandler);
+
+//Inbox example
+//Pushwoosh.presentInboxUI();
+
 
 // Segmentation example
 //Pushwoosh.setTags({ "testTag" : "testValue" });
@@ -106,14 +109,11 @@ Pushwoosh.getHwid((hwid) => {
 //  }
 //);
 
-// In-App messagin example
+
+// In-App messaging example
 //Pushwoosh.setUserId("%userId%");
 //Pushwoosh.postEvent("applicationOpened", { "attribute" : "value" });
 
-// Geolocation tracking example
-// import PushwooshGeozones from 'pushwoosh-geozones-react-native-plugin';
-// PushwooshGeozones.startLocationTracking();
-// PushwooshGeozones.stopLocationTracking();
 
 // Application icon badge number example
 //Pushwoosh.setApplicationIconBadgeNumber(2);
