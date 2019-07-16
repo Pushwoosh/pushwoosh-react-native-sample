@@ -1,4 +1,4 @@
-package com.pushwooshsample;
+package com.pushwoosh.demoapp;
 
 import com.facebook.react.ReactActivity;
 

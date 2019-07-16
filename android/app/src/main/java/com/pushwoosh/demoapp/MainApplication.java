@@ -1,20 +1,13 @@
-package com.pushwooshsample;
+package com.pushwoosh.demoapp;
 
 import android.app.Application;
-import android.util.Log;
 
+import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
-import com.pushwoosh.geozones.reactnativeplugin.PushwooshGeozonesPackage;
-import com.pushwoosh.reactnativeplugin.PushwooshPackage;
-import com.pushwoosh.reactnativeplugin.PushwooshPackage;
-import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
-import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
-import com.pushwoosh.reactnativeplugin.PushwooshPackage;
 
-import java.util.Arrays;
 import java.util.List;
 
 public class MainApplication extends Application implements ReactApplication {
@@ -27,11 +20,11 @@ public class MainApplication extends Application implements ReactApplication {
 
     @Override
     protected List<ReactPackage> getPackages() {
-      return Arrays.<ReactPackage>asList(
-          new MainReactPackage(),
-            new PushwooshGeozonesPackage(),
-          new PushwooshPackage()
-      );
+      @SuppressWarnings("UnnecessaryLocalVariable")
+      List<ReactPackage> packages = new PackageList(this).getPackages();
+      // Packages that cannot be autolinked yet can be added manually here, for example:
+      // packages.add(new MyReactNativePackage());
+      return packages;
     }
 
     @Override
