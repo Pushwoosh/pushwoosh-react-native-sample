@@ -121,3 +121,11 @@ Pushwoosh.getHwid((hwid) => {
 //Pushwoosh.getApplicationIconBadgeNumber((badgeNumber) => {
 //  console.warn("Application icon badge number = " + badgeNumber);
 //});
+
+// Other examples
+
+// Set notification icon background color
+// Pushwoosh.setNotificationIconBackgroundColor("#FF0000");
+
+// Create local notification
+// Pushwoosh.createLocalNotification({ "msg" : "my local notification", "seconds" : 10 })
