@@ -15,14 +15,31 @@ import {
   NativeModules
 } from 'react-native';
 
-
+import InlineInAppView from './node_modules/pushwoosh-react-native-plugin/InlineInApp.js'
+                              
 export default class PushwooshSample extends Component {
+  onLoaded(event) {
+    console.log('inline in-app loaded: ' + event);
+  }
+
+  onClosed(event) {
+    console.log('inline in-app closed:' + event);
+  }
+
+  onSizeChanged(event) {
+    console.log('inline in-app size changed:' + + event.nativeEvent.width + ' ' + event.nativeEvent.height);
+  }
+
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
+       <View style={{flexDirection: 'column', justifyContent: 'center', alignItems: 'stretch', flex: 1}}>   
+        <InlineInAppView 
+          identifier = {'enable_push_notifications'} 
+          onLoaded={this.onLoaded} 
+          onClosed={this.onClosed} 
+          onSizeChanged={this.onSizeChanged} 
+          style = {{height: 100}} 
+        />
         <Text style={styles.instructions}>
           To get started, edit index.ios.js
         </Text>
@@ -71,23 +88,23 @@ DeviceEventEmitter.addListener('pushOpened', (e: Event) => {
  //   alert(JSON.stringify(e));
  // });
 
-Pushwoosh.init({ "pw_appid" : "PUSHWOOSH_APP_CODE", "project_number":"PROJECT_NUMBER"});
+Pushwoosh.init({ "pw_appid" : "EB337-7E376", "project_number":"PROJECT_NUMBER"});
 
-Pushwoosh.register(
-  (token) => {
-    console.warn("Registered for pushes: " + token);
-    Pushwoosh.getPushToken(function(token) {
-        console.warn("Push token: " + token);
+// Pushwoosh.register(
+//   (token) => {
+//     console.warn("Registered for pushes: " + token);
+//     Pushwoosh.getPushToken(function(token) {
+//         console.warn("Push token: " + token);
 
-        // Geolocation tracking example
-        PushwooshGeozones.startLocationTracking();
-        //PushwooshGeozones.stopLocationTracking();
-    });
-  },
-  (error) => {
-    console.warn("Failed to register: " + error);
-  }
-);
+//         // Geolocation tracking example
+//         PushwooshGeozones.startLocationTracking();
+//         //PushwooshGeozones.stopLocationTracking();
+//     });
+//   },
+//   (error) => {
+//     console.warn("Failed to register: " + error);
+//   }
+// );
 
 Pushwoosh.getHwid((hwid) => {
   console.warn("Pushwoosh hwid: " + hwid);
