@@ -24,20 +24,21 @@ export default class PushwooshSample extends Component {
         <InlineInAppView 
           identifier = {'enable_push_notifications'} 
           onLoaded = {e => {
+            console.log('inline in-app loaded: ' + e.identifier);
             this.setState({
               inApp1Showed: true
             })
           }}
-          style = {{height: 120}} 
-        /> 
-        <InlineInAppView 
+          style = {{height: 100}}
+        />
+         <InlineInAppView 
           identifier = {this.state.inApp1Showed ? 'list_header' : ''}
           onLoaded = {e => {
             this.setState({
               inApp2Showed: true
             })
           }}
-          style = {{height: 250}} 
+          style = {{height: 230}} 
         /> 
         <InlineInAppView 
           identifier = {this.state.inApp2Showed ? 'bottom_banner' : ''}
