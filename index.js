@@ -73,6 +73,9 @@ DeviceEventEmitter.addListener('pushOpened', (e: Event) => {
 
 Pushwoosh.init({ "pw_appid" : "PUSHWOOSH_APP_CODE", "project_number":"PROJECT_NUMBER"});
 
+// Enables Huawei push messaging
+Pushwoosh.enableHuaweiPushNotifications();
+
 Pushwoosh.register(
   (token) => {
     console.warn("Registered for pushes: " + token);

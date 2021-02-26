@@ -1,4 +1,5 @@
 apply plugin: "com.android.application"
+apply plugin: "com.huawei.agconnect"
 
 import com.android.build.OutputFile
 
@@ -168,6 +169,7 @@ dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "com.facebook.react:react-native:+"  // From node_modules
     implementation "com.android.support:multidex:1.0.1"
+    implementation 'com.huawei.hms:push:5.0.2.300'
 
     // JSC from node_modules
     if (useIntlJsc) {
