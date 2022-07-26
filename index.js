@@ -71,7 +71,7 @@ DeviceEventEmitter.addListener('pushOpened', (e: Event) => {
  //   alert(JSON.stringify(e));
  // });
 
-Pushwoosh.init({ "pw_appid" : "PUSHWOOSH_APP_CODE", "project_number":"PROJECT_NUMBER"});
+Pushwoosh.init({ "pw_appid" : "11C10-EF18D", "project_number":"562785984945"});
 
 // Enables Huawei push messaging
 Pushwoosh.enableHuaweiPushNotifications();
