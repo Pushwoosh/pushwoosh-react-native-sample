@@ -7,7 +7,6 @@
     "test": "jest"
   },
   "dependencies": {
-    "pushwoosh-geozones-react-native-plugin": "^1.0.2",
     "pushwoosh-react-native-plugin": "^5.15.2",
     "react": "16.8.6",
     "react-native": "0.60.0"
